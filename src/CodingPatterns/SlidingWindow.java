@@ -15,10 +15,9 @@ public class SlidingWindow {
      * @param nums arr
      */
     public static void TestWidow(int[] nums) {
-        int windowSize = 3;
+        int windowSize = 2;
         for (int i = 0; i < nums.length - windowSize + 1; i++) {
             for (int j = i; j < i + windowSize; j++) {
-                System.out.println();
                 System.out.print(" " + nums[j]);
             }
             System.out.println();

@@ -1,5 +1,7 @@
 package easy;
 
+import java.util.Arrays;
+
 /**
  * @Auther : hasan.khan
  * @Created : 07-Nov-23
@@ -41,14 +43,43 @@ public class FibonacciNumber {
     }
 
 
+    public int fibDP(int n) {
+        int[] dp = new int[n + 1];
+        //Arrays.fill(dp, -1);
+        System.out.println("Start Time: "+System.currentTimeMillis());
+
+        dp[0] =0;
+        dp[1] =1;
+        for (int i = 2; i < dp.length; i++) {
+            dp[i]= -1;
+        }
+
+        if (dp[n] != -1) return dp[n];
+        return solve(n,dp);
+    }
+
+    public int solve(int n, int[] dp) {
+        if (n <= 1) return n;
+        if (dp[n] != -1) return dp[n];
+        System.out.println("dp = " + Arrays.toString(dp));
+        return dp[n] = solve(n - 1, dp) + solve(n - 2, dp);
+    }
+
+
     public static void main(String[] args) {
         FibonacciNumber o = new FibonacciNumber();
 
-        System.out.println("Optimized code ");
-
-        String s = "Hasan";
-        System.out.println(" s.toLowerCase(); = " + s.toLowerCase());
-        System.out.println("s = " + s);
+        System.out.println("o = " + o.fibDP(1));
+        System.out.println("End Time: "+System.currentTimeMillis());
+        System.out.println("o = " + o.fibDP(2));
+        System.out.println("o = " + o.fibDP(3));
+        System.out.println("o = " + o.fibDP(4)); // 3 +
+       // System.out.println("solved = " + o.fibRecu(5)); // 3 +
+//        System.out.println("Optimized code ");
+//
+//        String s = "Hasan";
+//        System.out.println(" s.toLowerCase(); = " + s.toLowerCase());
+//        System.out.println("s = " + s);
 
        /* System.out.println("o = " + o.fibRecu(10));
         System.out.println("o = " + o.fibRecu(20));
