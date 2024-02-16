@@ -2,15 +2,18 @@ package easy;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.logging.Logger;
 
 /**
  * @Auther : hasan.khan
  * @Created : 08-Sep-23
- * @Description:
+ * @Description: node of linked list
  */
 public class ListNode {
     public int val;
     public ListNode next;
+    static Logger logger = Logger.getLogger(ListNode.class.getName());
+
 
     public ListNode() {
     }
@@ -48,6 +51,8 @@ public class ListNode {
 
 
     public static ListNode generateListNode(int[] arr) {
+        if(arr.length==0) return null;
+
         ListNode head = new ListNode(arr[0]);
         ListNode currentNode = head;
 
@@ -56,8 +61,15 @@ public class ListNode {
             currentNode = currentNode.next;
         }
 
-        System.out.println("ListNode = " + head);
+      //  System.out.println("ListNode = " + head);
+        //logger.info("ListNode = " + head);
         return head;
+    }
+
+    public static void main(String[] args) {
+        int[] a = {};
+
+        generateListNode(a);
     }
 
 }
