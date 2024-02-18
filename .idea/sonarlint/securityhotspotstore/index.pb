@@ -172,3 +172,13 @@ j
 :src/practice/linkedList/problems/PalindromeLinkedList.java,1\6\16c18262f2fb3fe603906bc40821d0c6598bb7b4
 ~
 Nsrc/practice/linkedList/problems/InsertGreatestCommonDivisorsInLinkedList.java,6\6\66de2d28d699f916197a47102ea1bfd9a5098b1c
+n
+>src/practice/linkedList/problems/MergeNodesInBetweenZeros.java,8\1\81fd81eed58ce85ff32ba2719a6a50d93812b63b
+p
+@src/practice/linkedList/problems/RemoveNthNodeFromEndOfList.java,8\5\85795302048f4f4521903876d17222437d7b1182
+Q
+!src/practice/linkedList/Node.java,0\e\0ec5c54e43d17f1649d2b65974b9e1f17b898c88
+^
+.src/practice/linkedList/problems/LRUCache.java,2\8\28d9adefb37327c622c559fe50373d8ed3a06905
+n
+>src/practice/linkedList/problems/RemoveLinkedListElements.java,4\a\4ac4526937cb60b7172fd990abaab42d5009cc67
