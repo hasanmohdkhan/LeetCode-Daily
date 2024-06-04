@@ -1,7 +1,5 @@
 package neet150.binarysearch;
 
-import java.util.Arrays;
-
 /**
  * @Auther : hasan.khan
  * @Created : 04-Oct-23

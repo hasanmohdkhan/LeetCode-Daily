@@ -6,7 +6,8 @@ package easy;
  * @Description:
  */
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Definition for singly-linked list.

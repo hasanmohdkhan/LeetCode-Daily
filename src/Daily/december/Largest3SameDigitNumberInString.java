@@ -1,8 +1,5 @@
 package Daily.december;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * @Auther : hasan.khan
  * @Created : 04-Dec-23

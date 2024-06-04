@@ -1,7 +1,6 @@
 package practice.linkedList;
 
 import easy.ListNode;
-import org.w3c.dom.Node;
 
 /**
  * @Auther : hasan.khan

@@ -1,6 +1,9 @@
 package Daily.year24;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
 /**
  * @Auther : hasan.khan
