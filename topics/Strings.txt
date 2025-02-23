@@ -1,0 +1,31 @@
+Strings: 
+
+1. Under the hood, strings are just an array of characters.
+2. Like arrays, strings are variable in size. 
+3. In most languages, strings are immutable.
+    - making changes in string always create a new string causes space and time complexity
+    - In Java, a StringBuilder is used to hold a stream of characters before converting
+      it to a final immutable string(using .toString() method).
+
+## Common Mistakes in Interviews Featuring Strings
+
+1. Viewing String Problems As "Easy"
+   - String is a linear data structure, All the algorithms and techniques related to
+     linear data structures could potentially be involved in a string question.
+   - This means techniques like
+         ✅ two pointers
+         ✅ sliding windows
+         ✅ recursion
+         ✅ backtracking
+         ✅ dynamic programming
+      (to name just a few) can be used in a string question.
+
+   - Edge Cases and Interview Tips
+     Be mindful of uppercase vs. lowercase characters.
+     In ASCII, 'A' starts at 65 and 'a' at 97.
+
+2. Advance algorithm in Strings
+   The core algorithms to learn are:
+     ✅ KMP
+     ✅ Boyer Moore
+     ✅ Rabin-Karp

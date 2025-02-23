@@ -1,0 +1,11 @@
+https://leetcode.com/submissions/detail/1362360740/
+
+tips : We can perform a binary search on the possible values of the fractions (between 0 and 1).
+       For each mid-point mid in this range, we'll count how many fractions are less than or equal to mid
+      and also keep track of the largest fraction that is less than or equal to mid.
+      <h1> Count Fractions Using a Two-Pointer Approach: <h1>
+       For each value of mid in the binary search, use a two-pointer approach to count how many
+       fractions arr[i] / arr[j] are less than or equal to mid. If the count is less than k,
+       move the search to the right; otherwise, move the search to the left.
+     
+- 23 and 22 problem summary
