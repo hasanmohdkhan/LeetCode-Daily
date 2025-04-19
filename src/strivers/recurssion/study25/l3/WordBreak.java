@@ -1,9 +1,6 @@
 package strivers.recurssion.study25.l3;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @Auther : hasan.khan
@@ -26,7 +23,7 @@ public class WordBreak {
         return false;
     }
 
-    public boolean wordBreak(String s, List<String> wordDict) {
+    public boolean wordBreakO(String s, List<String> wordDict) {
         Set<String> wordSet = new HashSet<>(wordDict);
         boolean[] dp = new boolean[s.length() + 1];
         dp[0] = true; // empty is always true
@@ -41,6 +38,28 @@ public class WordBreak {
         }
 
         return dp[s.length()];
+    }
+
+    public boolean wordBreak(String s, List<String> wordDict) {
+
+        return back(s,wordDict, 0, new HashMap<>());
+    }
+
+    public boolean back(String s, List<String> wordDict, int start, HashMap<Integer, Boolean> mamo){
+        if(start == s.length()) return true;
+        if(mamo.containsKey(start)) return mamo.get(start);
+
+        for(int end = start+1 ; end <= s.length() ; end++){
+            String sub = s.substring(start, end);
+            if(wordDict.contains(sub) && back(s,wordDict, end, mamo)) {
+                mamo.put(start, true);
+                return true;
+            }
+
+        }
+        mamo.put(start, false);
+
+        return false;
     }
 
     public static void main(String[] args) {

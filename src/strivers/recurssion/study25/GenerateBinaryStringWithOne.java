@@ -46,10 +46,8 @@ public class GenerateBinaryStringWithOne {
 
     public static void main(String[] args) {
         GenerateBinaryStringWithOne s = new GenerateBinaryStringWithOne();
-        s.fun(1);
-       /* System.out.println();
-        s.fun(2);*/
-        System.out.println();
-        s.fun(3);
+        System.out.println("s = " +s.fun(1));
+        System.out.println("s = " +s.fun(2));
+        System.out.println("s = " +s.fun(3));
     }
 }
